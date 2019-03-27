@@ -1,0 +1,65 @@
+.dd {
+    display: flex;
+    float: right;
+}
+
+.DropDown {
+    position: relative;
+    border: none;
+    float: left;
+    width: auto;
+    margin: 50px 10px;
+    outline: none;
+    padding-right: 8px;
+  }
+  
+  .DropDown:after {
+      content: '\f078';
+      font: normal normal normal 17px/1 FontAwesome;
+      color: black;
+      right: 11px;
+      top: 8px;
+      height: 34px;
+      padding: 15px 0px 0px 8px;
+      position: absolute;
+      pointer-events: none;
+      border: none;
+  }
+  
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+  
+  .DropDown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    -ms-word-break: normal;
+    word-break: normal;
+    border: none;
+    outline: none;
+    list-style-type: none;
+  }
+
+  .DropDown select option {
+    border: white;
+    outline: none;
+    background: white;
+    
+  }
+
+  .DropDown select option::selection{
+      background: rgb(238, 233, 233)
+  }
